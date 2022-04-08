@@ -1,4 +1,4 @@
-## Project Title
+# Project Title
 Case_Study2: Web Crawling for printing automation.
 
 ## Getting Started
