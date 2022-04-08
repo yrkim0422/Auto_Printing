@@ -71,7 +71,7 @@ browser.find_element_by_name('password').send_keys('Initial0)')# writing passwor
 
 browser.find_element_by_xpath('/html/body/div[1]/div[1]/form/div/div[1]/button').click()# Searching the login button's xpath and click it.
 
-# Web scraping - read table of the listed rxn sheet numbers on "rxn sheet"
+## Web scraping - read table of the listed rxn sheet numbers on "rxn sheet"
 
 rxn_sheet_table_df = pd.read_html(browser.find_element(by=By.XPATH,value ="/html/body/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/table/tbody/tr[3]").get_attribute('outerHTML'))
 
@@ -81,7 +81,7 @@ rxn_plate_id_col = rxn_sheet_table_df[0][5] # Reading reaction sheets id column.
 
 ## Functions
 
-# Check the name of the department that you want to print the sheets.
+## Check the name of the department that you want to print the sheets.
 
 def check_dept(table):
     list_dept = []  # Get the row number of designated department.
@@ -91,7 +91,7 @@ def check_dept(table):
     list_dept.reverse() #reverse the list numbers to prioritize old rxn sheets to print out.
     return list_dept
     
-# Click linked rxn sheet number to print out
+## Click linked rxn sheet number to print out
 
 def click_print_sheet(pos): # 'pos' is a list that consist of row numbers that designated department rxn sheets.
 
@@ -99,13 +99,13 @@ def click_print_sheet(pos): # 'pos' is a list that consist of row numbers that d
     
     return click_sheet.click()
     
-# Get the rxn sheet row numbers to click
+## Get the rxn sheet row numbers to click
 
 positions = check_dept(rxn_plate_dept)
 
 list_position = positions
 
-# Using for loop to print out repeatedly
+## Using for loop to print out repeatedly
 
 for p in list_position:
 
