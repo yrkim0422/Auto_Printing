@@ -6,21 +6,32 @@ Case_Study2: Web Crawling for printing automation.
 These instructions will get you running on your local machine for development and testing purposes.
 
 ## Imports
-'''
+
 from selenium import webdriver
+
 from selenium.webdriver.common.keys import Keys
+
 from selenium.webdriver.support.ui import WebDriverWait
+
 from selenium.webdriver.common.by import By
+
 from selenium.webdriver.support import expected_conditions as EC
+
 from selenium.common.exceptions import ElementClickInterceptedException
+
 from webdriver_manager.chrome import ChromeDriverManager
+
 from selenium.webdriver.chrome.service import Service
+
 from selenium.webdriver.remote.webelement import WebElement
+
 from selenium.common.exceptions import NoSuchElementException
+
 import numpy as np
+
 import pandas as pd
+
 import time
-'''
 
 ## Installing
 
