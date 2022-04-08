@@ -43,19 +43,19 @@ Say what the step will be
 Selenium 
 Chromedriver
 
-# Start the chromedriver on your local machine
+## Start the chromedriver on your local machine
 
 path_to_chromedriver ='C:\\Users\\Ye Ryoung Kim\\Desktop\\chromedriver_win32\\chromedriver'
 
 browser = webdriver.Chrome(executable_path = path_to_chromedriver)
 
-# Set the url of "lims3.psomagen.com"
+## Set the url of "lims3.psomagen.com"
 
 url = 'https://lims3usqas.psomagen.com/main.do'
 
 browser.get(url)
 
-# Send Username &  Password.
+## Send Username &  Password.
 
 browser.find_element_by_name('username')
 
