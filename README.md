@@ -81,7 +81,7 @@ rxn_plate_id_col = rxn_sheet_table_df[0][5] # Reading reaction sheets id column.
 
 ## Functions
 
-### F_1 :Check the name of the department that you want to print the sheets.
+### F_1: Check the name of the department that you want to print the sheets.
 
 def check_dept(table):
     list_dept = []  # Get the row number of designated department.
@@ -91,7 +91,7 @@ def check_dept(table):
     list_dept.reverse() #reverse the list numbers to prioritize old rxn sheets to print out.
     return list_dept
     
-### F_2 Click linked rxn sheet number to print out
+### F_2: Click linked rxn sheet number to print out
 
 def click_print_sheet(pos): # 'pos' is a list that consist of row numbers that designated department rxn sheets.
 
